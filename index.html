@@ -3,9 +3,224 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/output.css" />
     <title>Document</title>
   </head>
-  <body>
-    <h1>Hello World</h1>
+  <body class="font-poppins">
+    <!-- Navbar -->
+    <!--
+    <nav class="sticky top-0 bg-teal-600">
+      <div class="container mx-auto flex justify-between px-5">
+        <div class="flex gap-1 py-4">
+          <a
+            href="/"
+            class="text-white hover:bg-teal-700 hidden md:inline-flex px-3 py-2 gap-1 font-medium items-center rounded-lg"
+            >Taupik Al Muzaki</a
+          >
+        </div>
+        <div class="flex gap-1 py-4">
+          <a
+            href=""
+            class="text-white hover:bg-teal-700 hidden md:inline-flex px-3 py-2 gap-1 font-medium items-center rounded-lg"
+          >
+            Home
+          </a>
+          <a
+            href=""
+            class="text-white hover:bg-teal-700 hidden md:inline-flex px-3 py-2 gap-1 font-medium items-center rounded-lg"
+          >
+            About
+          </a>
+          <a
+            href=""
+            class="text-white hover:bg-teal-700 hidden md:inline-flex px-3 py-2 gap-1 font-medium items-center rounded-lg"
+          >
+            Portofolio
+          </a>
+          <a
+            href=""
+            class="text-white hover:bg-teal-700 hidden md:inline-flex px-3 py-2 gap-1 font-medium items-center rounded-lg"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+  -->
+    <!-- Home -->
+    <section class="flex justify-center text-center mt-10">
+      <div class="flex flex-col gap-3">
+        <h1
+          class="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-[#002057]"
+        >
+          Hi There
+        </h1>
+        <h1
+          class="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-orange-400"
+        >
+          I'm Taupik
+        </h1>
+        <div class="flex gap-2">
+          <h1 class="text-xl md:text-2xl font-bold text-black">I Am Into</h1>
+          <p class="text-xl md:text-2xl font-bold text-red-800">
+            <span class="typingText"></span>
+          </p>
+        </div>
+        <!--
+        <div class="flex flex-row gap-3 justify-center">
+          <h1 class="text-white py-1 px-5 bg-black rounded-md">Projects</h1>
+          <h1 class="text-white py-1 px-5 bg-black rounded-md">Contact</h1>
+        </div>
+      --></div>
+    </section>
+    <!-- About -->
+    <section class="mt-10 mx-10">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-black text-center mb-5">
+          About
+        </h1>
+        <div class="justify-center items-center flex flex-col">
+          <img
+            src="/public/images/author.jpeg"
+            alt="Taupik"
+            class="w-52 h-52 md:w-96 md:h-96 rounded-full"
+          />
+          <h1 class="md:text-2xl font-bold mt-5 mb-2">
+            Hello World, My Name Is Taupik Al Muzaki
+          </h1>
+          <p class="max-w-4xl">
+            Seorang lulusan Teknik Komputer dan Jaringan yang memiliki
+            ketertarikan dengan dunia Coding. Halaman ini dibuat atas dorongan
+            rasa ingin tahu dan kecintaan terhadap pemecahan masalah. Saya
+            senang membangun aplikasi web yang menarik, dan juga ini merupakan
+            cara saya untuk bereksperimen sekaligus belajar tentang dunia
+            pengembangan website.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Project -->
+    <section class="mt-10 mb-5 mx-10">
+      <h1 class="text-4xl md:text-5xl font-bold text-black text-center mb-5">
+        Projects
+      </h1>
+      <div class="flex items-center justify-center gap-5 flex-col">
+        <!-- Project 1 -->
+        <div
+          class="bg-white border border-gray-200 rounded-lg shadow-sm hover:ring-2 hover:ring-gray-700 active:scale-95 transition-all md:w-3xl lg:w-4xl p-2"
+        >
+          <img src="/public/images/petani.png" alt="Crud Dashboard with auth" />
+          <div class="flex flex-col gap-1">
+            <h1 class="text-center text-2xl font-medium">
+              Simple Game Website
+            </h1>
+            <p class="text-center">
+              Dibuat dengan framework laravel, dengan fitur search mode & night
+              mode
+            </p>
+            <div class="flex items-center justify-center">
+              <a
+                href="https://github.com/taupikalmuzaki77/petaniemulator"
+                target="_blank"
+                class="cursor-pointer border border-teal-600 bg-white hover:bg-[#D1E7DD] text-teal-600 py-2 px-4 rounded-md"
+              >
+                View source code
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 1 End -->
+        <!-- Project 2 -->
+        <div
+          class="bg-white border border-gray-200 rounded-lg shadow-sm hover:ring-2 hover:ring-gray-700 active:scale-95 transition-all md:w-3xl lg:w-4xl p-2"
+        >
+          <img src="/public/images/crud.png" alt="Crud Dashboard with auth" />
+          <div class="flex flex-col gap-1">
+            <h1 class="text-center text-2xl font-medium">
+              Crud Dashboard With Auth
+            </h1>
+            <p class="text-center">Dibuat dengan framework laravel</p>
+            <div class="flex items-center justify-center">
+              <a
+                href="https://github.com/taupikalmuzaki77/CRUD-System-With-Auth"
+                target="_blank"
+                class="cursor-pointer border border-teal-600 bg-white hover:bg-[#D1E7DD] text-teal-600 py-2 px-4 rounded-md"
+              >
+                View source code
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 End -->
+      </div>
+    </section>
+    <!-- Contact -->
+    <section class="my-10">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-black text-center mb-5">
+          Contact
+        </h1>
+        <form action="https://api.web3forms.com/submit" method="post">
+          <div class="flex flex-col gap-5">
+            <input
+              type="hidden"
+              name="access_key"
+              value="caa33bbb-4cd8-47c5-944c-7ecd2cd9dd54"
+            />
+            <div class="text-center">
+              <input
+                type="text"
+                name="name"
+                placeholder="Masukan nama anda"
+                autocomplete="off"
+                required
+                class="p-2 border border-black rounded-md bg-white mx-2 w-80 md:w-2xl"
+              />
+            </div>
+            <div class="text-center">
+              <input
+                type="email"
+                name="email"
+                placeholder="Masukan email anda"
+                autocomplete="off"
+                required
+                class="p-2 border border-black rounded-md bg-white mx-2 w-80 md:w-2xl"
+              />
+            </div>
+            <div class="text-center">
+              <textarea
+                name="message"
+                placeholder="Masukan pesan anda"
+                required
+                class="p-2 border border-black rounded-md bg-white mx-2 w-80 h-60 md:w-2xl"
+              ></textarea>
+            </div>
+            <div class="items-center justify-center flex">
+              <button
+                type="submit"
+                class="cursor-pointer bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md"
+              >
+                Submit Form
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script>
+      window.onload = function () {
+        // Reset the form fields when the page loads
+        document.getElementById("form").reset();
+      };
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="/public/js/main.js"></script>
   </body>
 </html>
