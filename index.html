@@ -1,255 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Mengatur cara halaman ditampilkan di perangkat mobile. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <!-- Memberikan ringkasan singkat tentang isi halaman web. -->
+    <meta
+      name="description"
+      content="This is single page CV. The first project based on roadmap.sh"
     />
-    <link rel="stylesheet" href="/src/output.css" />
-    <title>Taupik Portofolio</title>
+    <!-- Menyatakan siapa pembuat atau penulis halaman web. -->
+    <meta name="author" content="Taupik Al Muzaki" />
+    <!-- Menentukan nama situs saat halaman dibagikan di media sosial. -->
+    <meta property="og:site_name" content="Single Page CV" />
+    <!-- Judul yang muncul saat halaman dibagikan ke media sosial. -->
+    <meta property="og:title" content="CV Taupik Al Muzaki" />
+    <!-- Deskripsi halaman khusus untuk social media preview. -->
+    <meta
+      property="og:description"
+      content="This is single page CV. My first frontend project based on roadmap.sh"
+    />
+    <!-- Menentukan jenis konten halaman. -->
+    <!-- Nilai umum: website, article, profile -->
+    <meta property="og:type" content="website" />
+    <!-- Gambar preview yang muncul saat link dibagikan. -->
+    <meta property="og:image" content="./assets/images/logo.svg" />
+    <!-- URL kanonik yang mewakili halaman tersebut. -->
+    <meta property="og:url" content="https://taupikalmuzaki77.github.io" />
+    <!-- Menentukan favicon, ikon kecil yang merepresentasikan website. -->
+    <link rel="icon" href="./assets/images/logo.svg" />
+    <!-- Import css -->
+    <link rel="stylesheet" href="./assets/css/output.css" />
+
+    <title>Portofolio Taupik Al Muzaki</title>
   </head>
-  <body class="font-poppins">
-    <!-- Navbar -->
-    <!--
-    <nav class="sticky top-0 bg-teal-600">
-      <div class="container mx-auto flex justify-between px-5">
-        <div class="flex gap-1 py-4">
-          <a
-            href="/"
-            class="text-white hover:bg-teal-700 hidden md:inline-flex px-3 py-2 gap-1 font-medium items-center rounded-lg"
-            >Taupik Al Muzaki</a
-          >
-        </div>
-        <div class="flex gap-1 py-4">
-          <a
-            href=""
-            class="text-white hover:bg-teal-700 hidden md:inline-flex px-3 py-2 gap-1 font-medium items-center rounded-lg"
-          >
-            Home
-          </a>
-          <a
-            href=""
-            class="text-white hover:bg-teal-700 hidden md:inline-flex px-3 py-2 gap-1 font-medium items-center rounded-lg"
-          >
-            About
-          </a>
-          <a
-            href=""
-            class="text-white hover:bg-teal-700 hidden md:inline-flex px-3 py-2 gap-1 font-medium items-center rounded-lg"
-          >
-            Portofolio
-          </a>
-          <a
-            href=""
-            class="text-white hover:bg-teal-700 hidden md:inline-flex px-3 py-2 gap-1 font-medium items-center rounded-lg"
-          >
-            Contact
-          </a>
-        </div>
-      </div>
-    </nav>
-  -->
-    <!-- Home -->
-    <section class="flex justify-center text-center mt-10">
-      <div class="flex flex-col gap-3">
-        <h1
-          class="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-[#002057]"
-        >
-          Hi There
-        </h1>
-        <h1
-          class="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-orange-400"
-        >
-          I'm Taupik
-        </h1>
-        <div class="flex gap-2">
-          <h1 class="text-xl md:text-2xl font-bold text-black">I Am Into</h1>
-          <p class="text-xl md:text-2xl font-bold text-red-800">
-            <span class="typingText"></span>
-          </p>
-        </div>
-        <!--
-        <div class="flex flex-row gap-3 justify-center">
-          <h1 class="text-white py-1 px-5 bg-black rounded-md">Projects</h1>
-          <h1 class="text-white py-1 px-5 bg-black rounded-md">Contact</h1>
-        </div>
-      --></div>
-    </section>
-    <!-- About -->
-    <section class="mt-10 mx-10">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-bold text-black text-center mb-5">
-          About
-        </h1>
-        <div class="justify-center items-center flex flex-col">
+  <body class="font-spaceMono">
+    <div class="my-20 mx-2 md:mx-10 xl:mx-96">
+      <header class="flex items-center justify-center flex-col">
+        <div>
           <img
-            src="/public/images/author.jpeg"
-            alt="Taupik"
-            class="w-52 h-52 md:w-96 md:h-96 rounded-full"
+            src="./assets/images/author.jpeg"
+            alt="Author Photo"
+            class="w-30 h-30 rounded-full"
           />
-          <h1 class="md:text-2xl font-bold mt-5 mb-2">
-            Hello World, My Name Is Taupik Al Muzaki
-          </h1>
-          <p class="max-w-4xl">
-            Seorang lulusan Teknik Komputer dan Jaringan yang memiliki
-            ketertarikan dengan dunia Coding. Halaman ini dibuat atas dorongan
-            rasa ingin tahu dan kecintaan terhadap pemecahan masalah. Saya
-            senang membangun aplikasi web yang menarik, dan juga ini merupakan
-            cara saya untuk bereksperimen sekaligus belajar tentang dunia
-            pengembangan website.
-          </p>
         </div>
-      </div>
-    </section>
-    <!-- Project -->
-    <section class="mt-10 mb-5 mx-10">
-      <h1 class="text-4xl md:text-5xl font-bold text-black text-center mb-5">
-        Projects
-      </h1>
-      <div class="flex items-center justify-center gap-5 flex-col">
-        <!-- Project 1 -->
-        <div
-          class="bg-white border border-gray-200 rounded-lg shadow-sm hover:ring-2 hover:ring-gray-700 active:scale-95 transition-all md:w-3xl lg:w-4xl p-2"
-        >
-          <img src="/public/images/petani.png" alt="Crud Dashboard with auth" />
-          <div class="flex flex-col gap-1">
-            <h1 class="text-center text-2xl font-medium">
-              Simple Game Website
-            </h1>
-            <p class="text-center">
-              Dibuat dengan framework laravel, dengan fitur search mode & night
-              mode
-            </p>
-            <div class="flex flex-col items-center justify-center gap-2">
-              <a
-                href="https://www.petaniemulator.com/"
-                target="_blank"
-                class="cursor-pointer border border-blue-600 bg-white hover:bg-[#d1d3e7] text-blue-600 py-2 px-4 rounded-md"
-              >
-                Live demo
-              </a>
-              <a
-                href="https://github.com/taupikalmuzaki77/petaniemulator"
-                target="_blank"
-                class="cursor-pointer border border-teal-600 bg-white hover:bg-[#D1E7DD] text-teal-600 py-2 px-4 rounded-md"
-              >
-                View source code
+        <div class="mt-10">
+          <h1 class="font-black text-4xl text-[#FC6666] tracking-tighter">
+            Hi there! I am Taupik
+          </h1>
+          <p class="text-center">You can call me Opik</p>
+        </div>
+      </header>
+
+      <section class="mt-5">
+        <h1 class="font-black text-[20px]">About me</h1>
+        <p>Hello World, My Fullname Is Taupik Al Muzaki.</p>
+        <p>
+          Seorang lulusan Teknik Komputer dan Jaringan yang memiliki
+          ketertarikan dengan dunia Coding.
+        </p>
+        <p>
+          Halaman ini dibuat atas dorongan rasa ingin tahu dan kecintaan
+          terhadap pemecahan masalah.
+        </p>
+        <p>
+          Saya senang membangun aplikasi web yang menarik, dan juga ini
+          merupakan cara saya untuk bereksperimen sekaligus belajar tentang
+          dunia pengembangan website.
+        </p>
+      </section>
+
+      <section class="mt-5">
+        <h1 class="font-black text-[20px]">Projects</h1>
+        <!-- project 1 -->
+        <div class="border relative rounded-md">
+          <div>
+            <img
+              src="./assets/images/1.jpeg"
+              alt="project 1 images"
+              class="rounded-md"
+            />
+            <!-- view demo -->
+            <div
+              class="absolute top-0 right-0 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
+            >
+              <a href="https://www.petaniemulator.com" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                </svg>
               </a>
             </div>
+            <!-- view code -->
+            <div
+              class="absolute top-0 right-11 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
+            >
+              <div class="cursor-not-allowed">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
+          <h1 class="font-bold text-center py-2">Personal Website</h1>
         </div>
-        <!-- Project 1 End -->
-        <!-- Project 2 -->
-        <div
-          class="bg-white border border-gray-200 rounded-lg shadow-sm hover:ring-2 hover:ring-gray-700 active:scale-95 transition-all md:w-3xl lg:w-4xl p-2"
-        >
-          <img src="/public/images/crud.png" alt="Crud Dashboard with auth" />
-          <div class="flex flex-col gap-1">
-            <h1 class="text-center text-2xl font-medium">
-              Crud Dashboard With Auth
-            </h1>
-            <p class="text-center">Dibuat dengan framework laravel</p>
-            <div class="flex items-center justify-center">
+        <!-- project 2 -->
+        <div class="border relative rounded-md mt-3">
+          <div>
+            <img
+              src="./assets/images/crud.png"
+              alt="project 1 images"
+              class="rounded-md"
+            />
+            <!-- view demo -->
+            <div
+              class="absolute top-0 right-0 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
+            >
+              <div class="cursor-not-allowed">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- view code -->
+            <div
+              class="absolute top-0 right-11 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
+            >
               <a
                 href="https://github.com/taupikalmuzaki77/CRUD-System-With-Auth"
                 target="_blank"
-                class="cursor-pointer border border-teal-600 bg-white hover:bg-[#D1E7DD] text-teal-600 py-2 px-4 rounded-md"
               >
-                View source code
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                  />
+                </svg>
               </a>
             </div>
           </div>
+          <h1 class="font-bold text-center py-2">CRUD With Auth</h1>
         </div>
-        <!-- Project 2 End -->
-        <!-- Project 3 -->
+        <!-- grid component start -->
         <div
-          class="bg-white border border-gray-200 rounded-lg shadow-sm hover:ring-2 hover:ring-gray-700 active:scale-95 transition-all md:w-3xl lg:w-4xl p-2"
+          class="grid grid-rows md:grid-cols-[repeat(2,330px)] lg:grid-cols-[repeat(2,455px)] mt-3 gap-3 justify-center"
         >
-          <img src="/public/images/contactform.png" alt="Contact Form" />
-          <div class="flex flex-col gap-1">
-            <h1 class="text-center text-2xl font-medium">
-              Contact Form Sederhana
-            </h1>
-            <p class="text-center">Dibuat dengan framework laravel</p>
-            <div class="flex items-center justify-center">
-              <a
-                href="https://github.com/taupikalmuzaki77/contactform"
-                target="_blank"
-                class="cursor-pointer border border-teal-600 bg-white hover:bg-[#D1E7DD] text-teal-600 py-2 px-4 rounded-md"
+          <!-- content start -->
+          <div class="grid border rounded-md">
+            <div class="relative">
+              <img
+                src="./assets/images/changelog.png"
+                alt=""
+                class="rounded-md"
+              />
+              <!-- view demo -->
+              <div
+                class="absolute top-0 right-0 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
               >
-                View source code
-              </a>
+                <span class="cursor-not-allowed">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <!-- view code -->
+              <div
+                class="absolute top-0 right-11 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
+              >
+                <a
+                  href="https://github.com/taupikalmuzaki77/CRUD-System-With-Auth"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
+            <p class="text-center font-bold py-2">Changelog Element</p>
           </div>
+          <!-- content end -->
         </div>
-        <!-- Project 3 End -->
-      </div>
-    </section>
-    <!-- Contact -->
-    <section class="my-10">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-bold text-black text-center mb-5">
-          Contact
-        </h1>
-        <form action="https://api.web3forms.com/submit" method="post">
-          <div class="flex flex-col gap-5">
-            <input
-              type="hidden"
-              name="access_key"
-              value="caa33bbb-4cd8-47c5-944c-7ecd2cd9dd54"
-            />
-            <div class="text-center">
-              <input
-                type="text"
-                name="name"
-                placeholder="Masukan nama anda"
-                autocomplete="off"
-                required
-                class="p-2 border border-black rounded-md bg-white mx-2 w-80 md:w-2xl"
-              />
-            </div>
-            <div class="text-center">
-              <input
-                type="email"
-                name="email"
-                placeholder="Masukan email anda"
-                autocomplete="off"
-                required
-                class="p-2 border border-black rounded-md bg-white mx-2 w-80 md:w-2xl"
-              />
-            </div>
-            <div class="text-center">
-              <textarea
-                name="message"
-                placeholder="Masukan pesan anda"
-                required
-                class="p-2 border border-black rounded-md bg-white mx-2 w-80 h-60 md:w-2xl"
-              ></textarea>
-            </div>
-            <div class="items-center justify-center flex">
-              <button
-                type="submit"
-                class="cursor-pointer bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md"
-              >
-                Submit Form
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <script>
-      window.onload = function () {
-        // Reset the form fields when the page loads
-        document.getElementById("form").reset();
-      };
-    </script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="/public/js/main.js"></script>
+        <!-- grid component end -->
+      </section>
+    </div>
   </body>
 </html>
