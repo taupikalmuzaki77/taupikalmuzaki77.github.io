@@ -35,25 +35,28 @@
     <title>Portofolio Taupik Al Muzaki</title>
   </head>
   <body class="font-spaceMono">
-    <div class="my-20 mx-2 md:mx-10 xl:mx-96">
+    <div class="my-5 mx-5 md:mx-10 xl:mx-[500px]">
       <header class="flex items-center justify-center flex-col">
         <div>
           <img
             src="./assets/images/author.jpeg"
             alt="Author Photo"
-            class="w-30 h-30 rounded-full"
+            class="w-30 h-30 md:w-50 md:h-50 rounded-full md:border-2 md:border-amber-500 lg:border-teal-500 xl:border-blue-500"
           />
         </div>
-        <div class="mt-10">
-          <h1 class="font-black text-4xl text-[#FC6666] tracking-tighter">
+        <div class="mt-5">
+          <h1
+            class="font-black text-2xl md:text-4xl text-[#FC6666] tracking-tighter"
+          >
             Hi there! I am Taupik
           </h1>
-          <p class="text-center">You can call me Opik</p>
+          <p class="text-center md:text-2xl">You can call me Opik</p>
         </div>
       </header>
 
+      <!--About me -->
       <section class="mt-5">
-        <h1 class="font-black text-[20px]">About me</h1>
+        <h1 class="font-black text-[20px] md:text-2xl mb-2">About me</h1>
         <p>Hello World, My Fullname Is Taupik Al Muzaki.</p>
         <p>
           Seorang lulusan Teknik Komputer dan Jaringan yang memiliki
@@ -70,15 +73,16 @@
         </p>
       </section>
 
+      <!-- Projects -->
       <section class="mt-5">
-        <h1 class="font-black text-[20px]">Projects</h1>
+        <h1 class="font-black text-[20px] md:text-2xl mb-2">Projects</h1>
         <!-- project 1 -->
         <div class="border relative rounded-md">
-          <div>
+          <div class="aspect-video w-full">
             <img
               src="./assets/images/1.jpeg"
               alt="project 1 images"
-              class="rounded-md"
+              class="rounded-md w-full h-full object-contain"
             />
             <!-- view demo -->
             <div
@@ -132,15 +136,17 @@
               </div>
             </div>
           </div>
-          <h1 class="font-bold text-center py-2">Personal Website</h1>
+          <h1 class="font-bold text-center py-2 md:text-2xl">
+            Personal Website
+          </h1>
         </div>
         <!-- project 2 -->
         <div class="border relative rounded-md mt-3">
-          <div>
+          <div class="aspect-video w-full">
             <img
               src="./assets/images/crud.png"
               alt="project 1 images"
-              class="rounded-md"
+              class="rounded-md w-full h-full object-contain"
             />
             <!-- view demo -->
             <div
@@ -197,227 +203,8 @@
               </a>
             </div>
           </div>
-          <h1 class="font-bold text-center py-2">CRUD With Auth</h1>
+          <h1 class="font-bold text-center py-2 md:text-2xl">CRUD With Auth</h1>
         </div>
-        <!-- grid component start -->
-        <div
-          class="grid grid-rows md:grid-cols-[repeat(2,330px)] lg:grid-cols-[repeat(2,455px)] mt-3 gap-3 justify-center"
-        >
-          <!-- content start -->
-          <div class="grid border rounded-md">
-            <div
-              class="w-full h-[250px] flex items-center justify-center relative"
-            >
-              <img
-                src="./assets/images/changelog.png"
-                alt=""
-                class="rounded-md object-contain"
-              />
-              <!-- view demo -->
-              <div
-                class="absolute top-0 right-0 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
-              >
-                <a
-                  href="https://taupikalmuzaki77.github.io/Changelog/"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <!-- view code -->
-              <div
-                class="absolute top-0 right-11 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
-              >
-                <a
-                  href="https://github.com/taupikalmuzaki77/Changelog"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <p class="text-center font-bold py-2">Changelog Element</p>
-          </div>
-          <!-- content end -->
-          <!-- content start -->
-          <div class="grid border rounded-md">
-            <div
-              class="w-full h-[250px] relative flex items-center justify-center"
-            >
-              <img
-                src="./assets/images/testimonial.png"
-                alt=""
-                class="rounded-md object-contain"
-              />
-              <!-- view demo -->
-              <div
-                class="absolute top-0 right-0 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
-              >
-                <a
-                  href="https://taupikalmuzaki77.github.io/testimonialcard/"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <!-- view code -->
-              <div
-                class="absolute top-0 right-11 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
-              >
-                <a
-                  href="https://github.com/taupikalmuzaki77/testimonialcard"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <p class="text-center font-bold py-2">Changelog Element</p>
-          </div>
-          <!-- content end -->
-          <!-- content start -->
-          <div class="grid border rounded-md">
-            <div
-              class="w-full h-[250px] flex items-center justify-center relative"
-            >
-              <img
-                src="./assets/images/datepicker.png"
-                alt=""
-                class="rounded-md w-full h-full object-contain"
-              />
-              <!-- view demo -->
-              <div
-                class="absolute top-0 right-0 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
-              >
-                <a
-                  href="https://taupikalmuzaki77.github.io/datepickerui/"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <!-- view code -->
-              <div
-                class="absolute top-0 right-11 border-2 py-0.5 px-1 m-2 rounded-md bg-white hover:bg-blue-500"
-              >
-                <a
-                  href="https://github.com/taupikalmuzaki77/datepickerui"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <p class="text-center font-bold py-2">Datepicker UI</p>
-          </div>
-          <!-- content end -->
-        </div>
-        <!-- grid component end -->
       </section>
     </div>
   </body>
